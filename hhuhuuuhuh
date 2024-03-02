@@ -1,0 +1,36 @@
+import sqlite3
+import requests
+from bs4 import BeautifulSoup # для вэб скрапинга
+
+connection = sqlite3.connect('database.db') # создаем базу данных
+cursor = connection.cursor() # создаем курсор для работы с базой данных
+
+# cursor.execute(""" CREATE TABLE weather report ( # создаем таблицу в базе данных
+#     id INTEGER PRIMARY KEY,
+#     place TEXT,
+#     temp TEXT,
+#     weather TEXT
+#  )""")
+#url = 'https//realweather/repor/AZ.huh'
+#response = requests.get(url)
+#html = response.text
+#def parce_hacker_news(html):
+#     soup = BeautifulSoup(html, 'html.parser')
+#     articles = soup.find_all('span', class_='weather_report')
+#     wr_data = []
+#for item in articles:
+#         title = item.find('a').text
+#         a,b,c=title.split(" ")
+#         wr_data.append({
+#             'place': a,
+#             'temp':b
+#             'weather': c
+#             
+#
+#
+#
+# cursor.executemany("INSERT INTO weather report VALUES (?, ?, ?, ?)", wr_data) 
+
+
+
+
